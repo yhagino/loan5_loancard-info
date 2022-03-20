@@ -27,8 +27,8 @@ include_once( $_SERVER['DOCUMENT_ROOT'] . '/search/result.php');
 <!-- form end -->
 <div class="row">
     <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)){ ?>
-    <?php echo $row['name'];?>
+    <?php include( $_SERVER['DOCUMENT_ROOT'] . '/common/item.php'); ?>
     <?php }; ?>
 </div>
 </main>
-<?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/common/footer.php'); ?>
+<?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/common/footer2.php'); ?>

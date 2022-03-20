@@ -11,7 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title><?=$tit;?></title>
     <meta name="description" content="<?=$desc;?>" />
-    <link rel="stylesheet" type="text/css" href="/css/content_style.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/content_style.css" />
 </head>
 
 <body>
@@ -19,8 +19,8 @@
     <?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/js/tag_body.php'); ?>
     <div class="container-fluid">
         <header>
-            <div class="header_logo"><a href="/"><img class="img_logo" src="/img/logo.png" alt="カードローン情報局" width="160"
-                        height="40"></a>
+            <div class="header_logo"><a href="/"><img class="img_logo" src="/img/common/logo.png" alt="カードローン情報局"
+                        width="160" height="40"></a>
             </div>
             <nav class="f_right">
                 <ul class="global-navi">
