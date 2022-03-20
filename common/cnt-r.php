@@ -2,13 +2,20 @@
     <aside>
         <h2 class="cnt-r-tit"><span>人気のコンテンツ</span></h2>
         <ul class="list-group">
-            <li class="list-group-item"><a
-                    href="/cnt/loan-unification.php<?php echo $linkid; ?>">借金を一本化できるおまとめローン！最短30分審査で即日融資可能！</a></li>
-            <li class="list-group-item"><a
-                    href="/cnt/loan-noenrollment-confirmation.php<?php echo $linkid; ?>">在籍確認連絡なしのカードローン！誰にもばれずにお金を借りたい人必見！</a>
-            </li>
-            <li class="list-group-item"><a
-                    href="/cnt/loan-limit-smallsum.php<?php echo $linkid; ?>">1万円～10万円までちょっとだけお金を借りたい方向け</a></li>
+            <a href="/cnt/loan.php<?php echo $linkid; ?>">
+                <li class="list-group-item r_list"><span class="cnt-r-1"></span>即日融資<br /><span
+                        class="fs12 text-l">すぐにお金が必要な方向け</span></li>
+            </a>
+
+            <a href="/cnt/loan.php<?php echo $linkid; ?>">
+                <li class="list-group-item r_list"><span class="cnt-r-2"></span>在籍確認なし<br /><span
+                        class="fs12 text-l">秘密でお金を借りたい人必見</span>
+                </li>
+            </a>
+            <a href="/cnt/loan.php<?php echo $linkid; ?>">
+                <li class="list-group-item r_list"><span class="cnt-r-3"></span>審査が不安<br /><span
+                        class="fs12 text-l">審査が不安な方はこちらから</span></li>
+            </a>
         </ul>
     </aside>
 </div>
