@@ -11,7 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title><?=$tit;?></title>
     <meta name="description" content="<?=$desc;?>" />
-    <link rel="stylesheet" type="text/css" href="css/content_style.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/content_style.min.css" />
 </head>
 
 <body>

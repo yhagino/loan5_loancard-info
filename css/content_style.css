@@ -9,8 +9,10 @@ body {
     color: #333333;
     -webkit-font-smoothing: antialiased;
 }
+.container-fluid {
+    max-width: 960px;
+}
 header {
-    width: 960px;
     display: -webkit-flex;
     display: table;
 }
@@ -19,11 +21,12 @@ nav {
     display: table-cell;
 }
 main {
-    padding: 0 0.8em;
+    padding: 0;
 }
 footer {
     width: 100%;
     padding: 0.8em;
+    background: #ff9b0b;
 }
 iframe {
     border: 0;
@@ -58,8 +61,8 @@ dt {
 }
 .list-unstyled {
     padding: 0.5em;
-    border: 3px solid #ffeb3b;
-    background: #fff9c4;
+    border: 3px solid #ff9b0b;
+    background: #ffd8a1;
 }
 .page-header {
     width: 100%;
@@ -311,7 +314,7 @@ img.img_logo {
 }
 .global-navi li a {
     display: block;
-    width: 161px;
+    width: 150px;
     box-sizing: border-box;
     padding: 9px 0;
     color: #333333;
@@ -467,4 +470,26 @@ td.input-td {
 .input-btn {
     width: 70%;
     margin: 0 auto;
+}
+.input-btn button {
+    color: white;
+    font-weight: bold;
+    background-color: #e31b00;
+    border-radius: 0.5rem !important;
+}
+.cnt-r-tit {
+}
+.cnt-r-tit {
+    color: #333333;
+    background: none;
+    border-bottom: 2px solid #ff9b0b;
+}
+.cnt-r-tit span {
+    padding: 4px 0 0 30px;
+    background-image: url(/img/star.png);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
 }

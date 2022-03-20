@@ -1,7 +1,7 @@
 <div class="row mt-10 input-box">
     <div class="col-12 input mt-30">
         <h2 class="input-tit"><span>簡単クレジットカード検索</span></h2>
-        <form name="search" method="post" action="https://cashing-karireta.com/search/index.php<?php echo $linkid; ?>">
+        <form name="search" method="post" action="https://cardloan-info.net/search/index.php<?php echo $linkid; ?>">
             <div class="form-row mb-20">
                 <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
@@ -11,7 +11,7 @@
                 <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
                             id="murisoku" name="murisoku" value="1"><label class="form-check-label"
-                            for="murisoku">無利息期間あり</label></div>
+                            for="murisoku">無利息期間有</label></div>
                 </div>
                 <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
@@ -74,61 +74,63 @@
                     <tr>
                         <th class="input-th">利用可能なコンビニ</th>
                         <td class="input-td">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="1"
+                                    name="convenience_id">
+                                <label class="form-check-label" for="inlineCheckbox11">セブンイレブン</label>
+                            </div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="1" name="convenience_id"><label class="form-check-label"
-                                    for="inlineCheckbox1">セブンイレブン</label></div>
+                                    id="inlineCheckbox12" value="2" name="convenience_id"><label
+                                    class="form-check-label" for="inlineCheckbox12">ローソン</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="2" name="convenience_id"><label class="form-check-label"
-                                    for="inlineCheckbox2">ローソン</label></div>
+                                    id="inlineCheckbox13" value="3" name="convenience_id"><label
+                                    class="form-check-label" for="inlineCheckbox13">ファミリーマート</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="3" name="convenience_id"><label class="form-check-label"
-                                    for="inlineCheckbox3">ファミリーマート</label></div>
+                                    id="inlineCheckbox14" value="4" name="convenience_id"> <label
+                                    class="form-check-label" for="inlineCheckbox14">サンクス</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="4" name="convenience_id" <label class="form-check-label"
-                                    for="inlineCheckbox4">サンクス</label></div>
-                            <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="5" name="convenience_id"><label class="form-check-label"
-                                    for="inlineCheckbox5">ミニストップ</label></div>
+                                    id="inlineCheckbox15" value="5" name="convenience_id"><label
+                                    class="form-check-label" for="inlineCheckbox15">ミニストップ</label></div>
                         </td>
                     </tr>
                     <tr>
                         <th class="input-th">借入方法<span class="fs8">（複数選択可）</span></th>
                         <td>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="1"><label class="form-check-label"
-                                    for="inlineCheckbox1">口座振込</label></div>
+                                    id="inlineCheckbox21" value="1"><label class="form-check-label"
+                                    for="inlineCheckbox21">口座振込</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="2"><label class="form-check-label"
-                                    for="inlineCheckbox2">ATM/CD（コンビニ）</label></div>
+                                    id="inlineCheckbox22" value="2"><label class="form-check-label"
+                                    for="inlineCheckbox22">ATM/CD（コンビニ）</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="3"><label class="form-check-label"
-                                    for="inlineCheckbox3">ATM/CD</label></div>
+                                    id="inlineCheckbox23" value="3"><label class="form-check-label"
+                                    for="inlineCheckbox23">ATM/CD</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="4" <label class="form-check-label"
-                                    for="inlineCheckbox4">店舗窓口</label></div>
+                                    id="inlineCheckbox24" value="4"><label class="form-check-label"
+                                    for="inlineCheckbox24">店舗窓口</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="5"><label class="form-check-label"
-                                    for="inlineCheckbox5">インターネット</label></div>
+                                    id="inlineCheckbox25" value="5"><label class="form-check-label"
+                                    for="inlineCheckbox25">インターネット</label></div>
                         </td>
                     </tr>
                     <tr>
                         <th class="input-th">返済方法<span class="fs8">（複数選択可）</span></th>
                         <td>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="1"><label class="form-check-label"
-                                    for="inlineCheckbox1">口座振込</label></div>
+                                    id="inlineCheckbox31" value="1"><label class="form-check-label"
+                                    for="inlineCheckbox31">口座振込</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="2"><label class="form-check-label"
-                                    for="inlineCheckbox2">ATM/CD（コンビニ）</label></div>
+                                    id="inlineCheckbox32" value="2"><label class="form-check-label"
+                                    for="inlineCheckbox32">ATM/CD（コンビニ）</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="3"><label class="form-check-label"
-                                    for="inlineCheckbox3">ATM/CD</label></div>
+                                    id="inlineCheckbox33" value="3"><label class="form-check-label"
+                                    for="inlineCheckbox33">ATM/CD</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="4" <label class="form-check-label"
-                                    for="inlineCheckbox4">店舗窓口</label></div>
+                                    id="inlineCheckbox34" value="4"><label class="form-check-label"
+                                    for="inlineCheckbox34">店舗窓口</label></div>
                             <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
-                                    id="inlineCheckbox" value="5"><label class="form-check-label"
-                                    for="inlineCheckbox5">口座引落し</label></div>
+                                    id="inlineCheckbox35" value="5"><label class="form-check-label"
+                                    for="inlineCheckbox35">口座引落し</label></div>
                         </td>
                     </tr>
                 </table>
