@@ -1,4 +1,8 @@
-<footer class="mt-20 text-white bg-secondary text-center">
+<?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/common/cnt-r.php'); ?>
+</div>
+</div>
+<!--container-fluid-->
+<footer class="mt-20 text-white text-center">
     <address>Copyright&copy; 2022- カードローン情報局, All Rights Reserved.｜<a href="http://cardloan-info.net/company/"
             target="_blank" title="運営会社情報">運営会社情報</a></address>
 </footer>

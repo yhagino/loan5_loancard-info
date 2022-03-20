@@ -14,30 +14,31 @@
     <link rel="stylesheet" type="text/css" href="css/content_style.min.css" />
 </head>
 
-<body class="container">
+<body>
     <?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/query.php'); ?>
     <?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/js/tag_body.php'); ?>
-    <header>
-        <div class="header_logo"><a href="/"><img class="img_logo" src="/img/logo.png" alt="カードローン情報局" width="160"
-                    height="40"></a>
-        </div>
-        <nav class="f_right">
-            <ul class="global-navi">
-                <li class="home"><a href="/">
-                        <span>TOP</span>
-                    </a></li>
-                <li class=""><a href="/">
-                        <span>テキスト</span>
-                    </a></li>
-                <li class=""><a href="/">
-                        <span>テキスト</span>
-                    </a></li>
-                <li class=""><a href="/">
-                        <span>テキスト</span>
-                    </a></li>
-                <li class=""><a href="/">
-                        <span>テキスト</span>
-                    </a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-fluid">
+        <header>
+            <div class="header_logo"><a href="/"><img class="img_logo" src="/img/logo.png" alt="カードローン情報局" width="160"
+                        height="40"></a>
+            </div>
+            <nav class="f_right">
+                <ul class="global-navi">
+                    <li class="home"><a href="/">
+                            <span>TOP</span>
+                        </a></li>
+                    <li class=""><a href="/">
+                            <span>テキスト</span>
+                        </a></li>
+                    <li class=""><a href="/">
+                            <span>テキスト</span>
+                        </a></li>
+                    <li class=""><a href="/">
+                            <span>テキスト</span>
+                        </a></li>
+                    <li class=""><a href="/">
+                            <span>テキスト</span>
+                        </a></li>
+                </ul>
+            </nav>
+        </header>
