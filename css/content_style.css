@@ -376,8 +376,14 @@ footer a {
     text-decoration: underline;
 }
 /* -----input----- */
+.entry-progress {
+    background: none;
+    font-size: 28px;
+    text-align: center;
+}
 .input-box {
-    border: 1px solid #ff9b0b;
+    border: 5px solid #ff9b0b;
+    border-top: 2px solid #ff9b0b;
     border-radius: 0.25rem !important;
 }
 .input-tit {
