@@ -15,43 +15,43 @@
         <h2 class="input-tit"><span>簡単クレジットカード検索</span></h2>
         <form name="search" method="post" action="https://cardloan-info.net/search/index.php<?php echo $linkid; ?>">
             <div class="form-row mb-20">
-                <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
+                <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
                             id="sokujitu" name="sokujitu" value="1"><label class="form-check-label"
                             for="sokujitu">即日融資可能</label></div>
                 </div>
-                <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
+                <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
                             id="murisoku" name="murisoku" value="1"><label class="form-check-label"
                             for="murisoku">無利息期間有</label></div>
                 </div>
-                <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
+                <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
                             id="raitenhuyou" name="raitenhuyou" value="1"><label class="form-check-label"
                             for="raitenhuyou">来店不要</label></div>
                 </div>
-                <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
+                <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
                             id="teirate" name="teirate" value="1"><label class="form-check-label"
                             for="teirate">低金利</label></div>
                 </div>
             </div>
             <div class="form-row mb-20">
-                <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
+                <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="shufu"
                             name="shufu" value="1"><label class="form-check-label" for="shufu">主婦OK</label></div>
                 </div>
-                <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
+                <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
                             id="bankloan" name="bankloan" value="1"><label class="form-check-label"
                             for="bankloan">銀行系ローン</label></div>
                 </div>
-                <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
+                <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
                             id="highlimit" name="highlimit" value="1"><label class="form-check-label"
                             for="highlimit">限度額が高い </label></div>
                 </div>
-                <div class="form-group col-12 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
+                <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
                             id="nocredit"><label class="form-check-label" for="nocredit">担保不要</label></div>
                 </div>
@@ -81,6 +81,10 @@
                         <option value="24">当日中</option>
                     </select></div>
             </div>
+            <?php
+        $ua = $_SERVER['HTTP_USER_AGENT'];
+        if ((strpos($ua, 'Android') !== false) && (strpos($ua, 'Mobile') !== false) || (strpos($ua, 'iPhone') !== false) || (strpos($ua, 'Windows Phone') !== false)) : ?>
+            <?php else:?>
             <div class="form-row">
                 <table class="col-12 table">
                     <tr>
@@ -147,6 +151,7 @@
                     </tr>
                 </table>
             </div>
+            <?php endif;?>
     </div>
     <div class="form-row justify-content-center mb-30 input-btn"><button type="submit"
             class="btn col-10">この条件で検索</button></div>
