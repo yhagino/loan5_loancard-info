@@ -15,6 +15,7 @@ body {
 header {
     display: -webkit-flex;
     display: table;
+    margin: 0 auto;
 }
 
 nav {
@@ -343,16 +344,19 @@ li.home span {
     width: 20px;
     height: 20px;
 }
+.top-img {
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    text-align: center;
+}
 h2 {
-    color: #333333;
     padding: 0.5em;
-    background: repeating-linear-gradient(
-        45deg,
-        #ff9b0b,
-        #ff9b0b 10px,
-        #ffd8a1 10px,
-        #ffd8a1 20px
-    );
+    background: #ff9b0b;
+    color: white;
+}
+h3 {
+    background: #ffd8a1;
 }
 .border1 {
     padding: 0.3em;
@@ -380,6 +384,7 @@ footer a {
     background: none;
     font-size: 28px;
     text-align: center;
+    color: #333333;
 }
 .input-box {
     border: 5px solid #ff9b0b;
