@@ -1,7 +1,13 @@
 <div class="row">
     <div class="col12">
         <h2 class="justify-content-center entry-progress ">＼申込みから受取までの簡単３ステップ／</h2>
-        <img class="img-fluid" src="/img/entry_progress.png" alt="">
+        <?php
+        $ua = $_SERVER['HTTP_USER_AGENT'];
+        if ((strpos($ua, 'Android') !== false) && (strpos($ua, 'Mobile') !== false) || (strpos($ua, 'iPhone') !== false) || (strpos($ua, 'Windows Phone') !== false)) : ?>
+        <img class="img-fluid" src="/img/entry_progress_sp.png" alt="">
+        <?php else:?>
+        <img class="img-fluid" src="/img/entry_progress_pc.png" alt="">
+        <?php endif;?>
     </div>
 </div>
 <div class="row mt-10 input-box">
