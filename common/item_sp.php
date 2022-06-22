@@ -1,8 +1,9 @@
 <div class="item_sp mt-15">
-    <a href="/ad/<?=$row['url'];?>">
+    <a href="/ad/<?=$row['name_id'];?>.php">
         <div class="item_sp_box">
             <h2 class="item_sp_tit text-l"><?php echo $row['name'];?></h2>
-            <div class="item_sp_detail_img"><img class="detail_img" src="/img/common/ad.png" alt=""></div>
+            <div class="item_sp_detail_img"><img class="detail_img" src="/img/item/<?=$row['name_id'];?>.jpg" alt="">
+            </div>
             <div class="item_sp_detail_link">
                 <p>融資完了まで <em><?=$row['loantime'];?></em></p>
             </div>
@@ -25,8 +26,8 @@
         </table>
     </div>
     <p class="fs8 item-attention-p justify-content-center"><?=$row['attention'];?></p>
-    <div class="justify-content-center mt-10 mb-10 item-sp-btn"><button
-            class="justify-content-center btn col-10"><span></span>この条件で検索</button>
+    <div class="justify-content-center mt-10 mb-10 item-sp-btn"><a href="/ad/<?=$row['name_id'];?>.php"><button
+                class="justify-content-center btn col-10"><span></span>公式ページを読む</button></a>
     </div>
     <div class="item-sp-pr">
         <p class="item-pr-p fs10 mb-10"><?=$row['pr'];?></p>

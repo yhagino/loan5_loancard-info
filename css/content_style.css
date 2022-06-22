@@ -654,6 +654,7 @@ td.input-td {
     height: 30px;
 }
 .item-attention-p {
+    margin-top: 5px;
     padding-left: 2.5em;
 }
 .item-pr-p {

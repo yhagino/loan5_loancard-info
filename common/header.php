@@ -1,3 +1,4 @@
+<?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/query.php'); ?>
 <?php echo "<!doctype html>";?>
 <html lang="ja">
 
@@ -15,7 +16,6 @@
 </head>
 
 <body>
-    <?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/query.php'); ?>
     <?php include_once( $_SERVER['DOCUMENT_ROOT'] . '/js/tag_body.php'); ?>
     <?php
         $ua = $_SERVER['HTTP_USER_AGENT'];

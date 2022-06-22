@@ -13,7 +13,7 @@
 <div class="row mt-10 input-box">
     <div class="col-12 input mt-30">
         <h2 class="input-tit"><span>簡単クレジットカード検索</span></h2>
-        <form name="search" method="post" action="https://cardloan-info.net/search/index.php<?php echo $linkid; ?>">
+        <form name="search" method="post" action="https://cardloan-info.net/search/index.php">
             <div class="form-row mb-20">
                 <div class="form-group col-6 col-md mb-sm-10 ml-md-2 p-2 border rounded checkbox">
                     <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"

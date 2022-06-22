@@ -1,10 +1,10 @@
 <div class="item_box col-12 mt-15">
-    <h2 class="item_tit"><a href="/ad/<?=$row['url'];?>"><?php echo $row['name'];?></a></h2>
+    <h2 class="item_tit"><a href="/ad/<?=$row['name_id'];?>.php"><?php echo $row['name'];?></a></h2>
     <div class=" item_detail_box">
-        <div class="item_detail_img"><a href="/ad/<?=$row['url'];?>"><img class="detail_img" src="/img/common/ad.png"
-                    alt=""></a></div>
+        <div class="item_detail_img"><a href="/ad/<?=$row['name_id'];?>.php"><img class="detail_img"
+                    src="/img/item/<?=$row['name_id'];?>.jpg" alt=""></a></div>
         <div class="item_detail_glid2">
-            <a href="/ad/<?=$row['url'];?>">
+            <a href="/ad/<?=$row['name_id'];?>.php">
                 <div class="item_detail_link">
                     <p>融資完了まで <?=$row['loantime'];?><span></span></p>
                 </div>
@@ -45,8 +45,8 @@ if($row['convenienceMinistop'] == 1){echo '<div class="icon ministop"></div>';}
         </div>
     </div>
     <p class="fs8 item-attention-p"><?=$row['attention'];?></p>
-    <div class="justify-content-center mt-10 mb-10 item-btn"><button
-            class="justify-content-center btn col-10"><span></span>この条件で検索</button>
+    <div class="justify-content-center mt-10 mb-10 item-btn"><a href="/ad/<?=$row['name_id'];?>.php"><button
+                class="justify-content-center btn col-10"><span></span>公式ページを読む</button></a>
     </div>
     <div class="item-pr">
         <p class="item-pr-p fs10 mb-10"><?=$row['pr'];?></p>
