@@ -1,18 +1,18 @@
 <?php
 session_start();
-if (isset($_GET['adid'])) {
-    $adid = $_GET['adid'];
-    $_SESSION['adid'] = $_GET['adid'];
-    $_COOKIE['adid'] = $_GET['adid'];
-} elseif (isset($_SESSION['adid'])) {
-    $adid = $_SESSION['adid'];
-    $_COOKIE['adid'] = $_SESSION['adid'];
-} elseif (isset($_COOKIE['adid'])) {
-    $adid = $_COOKIE['adid'];
-    $_SESSION['adid'] = $_COOKIE['adid'];
-} elseif (!isset($_SESSION['adid']) && !isset($_GET['adid']) && !isset($adid)) {
-    $adid = $urlCheckUrl;
-    $_SESSION['adid'] = $adid;
+if (isset($_GET['cid'])) {
+    $cid = $_GET['cid'];
+    $_SESSION['cid'] = $_GET['cid'];
+    $_COOKIE['cid'] = $_GET['cid'];
+} elseif (isset($_SESSION['cid'])) {
+    $cid = $_SESSION['cid'];
+    $_COOKIE['cid'] = $_SESSION['cid'];
+} elseif (isset($_COOKIE['cid'])) {
+    $cid = $_COOKIE['cid'];
+    $_SESSION['cid'] = $_COOKIE['cid'];
+} elseif (!isset($_SESSION['cid']) && !isset($_GET['cid']) && !isset($cid)) {
+    $cid = $urlCheckUrl;
+    $_SESSION['cid'] = $cid;
 }
 if (isset($_GET['gclid'])  && $_GET['gclid'] !== '') {
     $gclid = $_GET['gclid'];

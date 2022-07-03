@@ -3,19 +3,19 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/query.php');
 if (isset($asp_link)) {
     if (strpos($asp_link, 'digi-tag') !== false) {
         if (isset($gclid)) {
-            $link_url = $asp_link . 'l5-' . $adid . "&af=" . $gclid;
+            $link_url = $asp_link . $cid . "&af=" . $gclid;
         } elseif (isset($yclid)) {
-            $link_url = $asp_link . 'l5-' . $adid . "&af=" . $yclid;
+            $link_url = $asp_link . $cid . "&af=" . $yclid;
         } else {
-            $link_url = $asp_link . 'l5-' . $adid;
+            $link_url = $asp_link . $cid;
         }
     } else {
         if (isset($gclid)) {
-            $link_url = $asp_link . 'l5-' . $adid . "&gclid=" . $gclid;
+            $link_url = $asp_link . $cid . "&gclid=" . $gclid;
         } elseif (isset($yclid)) {
-            $link_url = $asp_link . 'l5-' . $adid . "&yclid=" . $yclid;
+            $link_url = $asp_link . $cid . "&yclid=" . $yclid;
         } else {
-            $link_url = $asp_link . 'l5-' . $adid;
+            $link_url = $asp_link . $cid;
         }
     }
     header("Refresh: 1; URL= $link_url");
