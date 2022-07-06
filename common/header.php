@@ -34,9 +34,9 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link" href="/">Home</a>
-                            <a class="nav-item nav-link" href="#">Features</a>
-                            <a class="nav-item nav-link" href="#">Pricing</a>
-                            <a class="nav-item nav-link" href="#">Disabled</a>
+                            <a class="nav-item nav-link" href="/cnt/loan-sokujitu.php">即日融資</a>
+                            <a class="nav-item nav-link" href="/cnt/loan-zaiseki.php">在籍確認なし</a>
+                            <a class="nav-item nav-link" href="/cnt/loan-sinsa.php">審査が不安</a>
                         </div>
                     </div>
                 </nav>
@@ -51,18 +51,18 @@
                         <li class="home"><a href="/">
                                 <span>TOP</span>
                             </a></li>
-                        <li class=""><a href="/">
-                                <span>テキスト</span>
+                        <li class=""><a href="/cnt/loan-sokujitu.php">
+                                <span>即日融資</span>
                             </a></li>
-                        <li class=""><a href="/">
-                                <span>テキスト</span>
+                        <li class=""><a href="/cnt/loan-zaiseki.php">
+                                <span>在籍確認なし</span>
                             </a></li>
-                        <li class=""><a href="/">
-                                <span>テキスト</span>
+                        <li class=""><a href="/cnt/loan-sinsa.php">
+                                <span>審査が不安</span>
                             </a></li>
-                        <li class=""><a href="/">
+                        <!-- <li class=""><a href="/">
                                 <span>テキスト</span>
-                            </a></li>
+                            </a></li> -->
                     </ul>
                 </nav>
             </header>
