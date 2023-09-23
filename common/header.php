@@ -22,6 +22,7 @@
         if ((strpos($ua, 'Android') !== false) && (strpos($ua, 'Mobile') !== false) || (strpos($ua, 'iPhone') !== false) || (strpos($ua, 'Windows Phone') !== false)) : ?>
     <div class="container-fluid">
         <div class="row">
+            <div class="text_pr"><span>[PR]</span></div>
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a href="/"><img class="img_logo" src="/img/common/logo.png" alt="カードローン情報局" width="160"
@@ -43,6 +44,7 @@
             </div>
             <?php else:?>
             <header>
+                <div class="text_pr"><span>[PR]</span></div>
                 <div class="header_logo"><a href="/"><img class="img_logo" src="/img/common/logo.png" alt="カードローン情報局"
                             width="160" height="40"></a>
                 </div>
