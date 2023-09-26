@@ -23,6 +23,11 @@ header {
     flex-basis: 0%;
     justify-content: flex-end;
 }
+@media screen and (max-width: 480px) {
+    .text_pr {
+        flex-basis: 8%;
+    }
+}
 nav {
     display: table-cell;
 }
